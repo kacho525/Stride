@@ -1,0 +1,28 @@
+@keyframes sharjum {
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes tartel {
+    from{
+        background-color: #F76F15;
+    }
+
+    to{
+        background-color: #FF822F;
+    }
+}
+
+@keyframes slaq {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
