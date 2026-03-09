@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page was created for amateur purposes.">
+    <title>Stride</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="fixed w-[100%] z-[9999] top-[0]">
+            <p class="bg-[#F76F15] py-[5px] px-[10px] text-white text-center whitespace-nowrap overflow-hidden text-ellipsis text-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]"
+                title="Free shipping on orders over $75 | Use code STRIDE20 for 20% off your first order">Free shipping
+                on orders over <span class="font-bold">$75</span> | Use code <span class="font-bold">STRIDE20</span> for
+                20% off your
+                first order</p>
+            <!-- Բուրգեր մենյու -->
+            <div class=" bg-[#fff] flex justify-around items-center group ">
+                <label for="check" tabindex="-1"
+                    class="flex-col w-[40px] h-[40px] justify-evenly rounded-[7px] duration-[.4s] hover:bg-[#00000014] focus:bg-[#00000014] hidden max-lg:flex">
+                    <input type="checkbox" name="" id="check" class="peer hidden">
+                    <span
+                        class="w-[30px] h-[3px] bg-[black] mx-[auto] duration-[.4s] peer-checked:rotate-[-45deg] peer-checked:translate-y-[10px]"></span>
+                    <span class="w-[30px] h-[3px] bg-[black] mx-[auto] duration-[.4s] peer-checked:opacity-0"></span>
+                    <span
+                        class="w-[30px] h-[3px] bg-[black] mx-[auto] duration-[.4s] peer-checked:rotate-[45deg] peer-checked:translate-y-[-10px]"></span>
+                </label>
+                <!-- Վերևի Էմբլեմա -->
+                <div class="flex py-[25px] items-center">
+                    <div class="w-[45px] h-[45px] flex justify-center items-center bg-[#F76F15] rounded-[10px]">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                            <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+                        </svg>
+                    </div>
+                    <span class="ml-[15px] text-[20px] font-bold">Stride</span>
+                </div>
+                <!-- Վերևի մենյու -->
+                <div class="w-[40%] max-lg:w-[0]">
+                    <ul
+                        class="flex list-none justify-between max-lg:hidden group-has-[:checked]:flex max-lg:absolute max-lg:w-[100%] max-lg:h-[300px] max-lg:flex-col max-lg:bg-[white] max-lg:left-0 max-lg:top-[128px] max-lg:pl-[15px] max-lg:justify-evenly">
+                        <li><a href="#" class="outline-none px-[7px] py-[3px] rounded-[5px] focus:outline-[2px] focus:outline-solid focus:outline-[#F76F15] duration-[.4s] hover:text-[#F76F15] focus:text-[#F76F15]" tabindex="0">Shop</a></li>
+                        <li><a href="#" class="outline-none px-[7px] py-[3px] rounded-[5px] focus:outline-[2px] focus:outline-solid focus:outline-[#F76F15] duration-[.4s] hover:text-[#F76F15] focus:text-[#F76F15]" tabindex="0">Categories</a></li>
+                        <li><a href="#" class="outline-none px-[7px] py-[3px] rounded-[5px] focus:outline-[2px] focus:outline-solid focus:outline-[#F76F15] duration-[.4s] hover:text-[#F76F15] focus:text-[#F76F15]" tabindex="0">New Arrivals</a></li>
+                        <li><a href="#" class="outline-none px-[7px] py-[3px] rounded-[5px] focus:outline-[2px] focus:outline-solid focus:outline-[#F76F15] duration-[.4s] hover:text-[#F76F15] focus:text-[#F76F15]" tabindex="0">Sale</a></li>
+                        <li><a href="#" class="outline-none px-[7px] py-[3px] rounded-[5px] focus:outline-[2px] focus:outline-solid focus:outline-[#F76F15] duration-[.4s] hover:text-[#F76F15] focus:text-[#F76F15]" tabindex="0">About</a></li>
+                    </ul>
+                </div>
+                <!-- Վերևի աջ հատվածի իկոնկաներ -->
+                <div class="flex w-[200px] justify-between">
+                    <div tabindex="-1"
+                        class="w-[35px] h-[35px] flex justify-center items-center rounded-[8px] duration-[.4s] hover:bg-[#00000024] focus:bg-[#00000024]">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <div tabindex="-1"
+                        class="w-[35px] h-[35px] flex justify-center items-center rounded-[8px] duration-[.4s] hover:bg-[#00000024] focus:bg-[#00000024]">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+                        </svg>
+                    </div>
+                    <div tabindex="-1"
+                        class="w-[35px] h-[35px] flex justify-center items-center rounded-[8px] duration-[.4s] hover:bg-[#00000024] focus:bg-[#00000024]">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div tabindex="-1"
+                        class="relative w-[35px] h-[35px] flex justify-center items-center rounded-[8px] duration-[.4s] hover:bg-[#00000024] focus:bg-[#00000024]">
+                        <div
+                            class="absolute w-[20px] h-[20px] rounded-full bg-red-500 top-[-5px] right-[-2px] text-center text-sm/5 text-[white] font-bold">
+                            2</div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 7h12l-1 13H7L6 7z"></path>
+                            <path d="M9 7a3 3 0 0 1 6 0"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="">
+            <!-- Վերևի բանեռային հատված -->
+            <div class=" bg-linear-to-r from-[#000] to-[#3E1B0F] border-t-[1px] pb-[25px] mt-[150px]">
+                <div class="w-[90%] mx-auto mt-[25px] flex justify-between max-xl:flex-wrap">
+                    <div class="w-[680px] max-md:w-100%">
+                        <!-- Վերնագրի և ինֆորմացիայի բաժին -->
+                        <div class="">
+                            <!-- Վերնագրի բաժին -->
+                            <div class="">
+                                <div class="flex text-[#A04508] font-bold p-[8px] w-max rounded-full bg-[#fed7aa]">
+                                    <svg width="25" height="25" viewBox="0 0 24 24" fill="#F76F15">
+                                        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+                                    </svg>
+                                    New Collection 2032
+                                </div>
+                                <h1 class="text-6xl font-bold mt-[25px] text-[#fff]">Step Into</h1>
+                                <p class="text-6xl font-bold text-[#F76F15]">Your Best</p>
+                                <p class="text-[#99A1AF] text-2xl my-[20px]">Premium footwear for every step of your
+                                    journey. From athletic performance to
+                                    everyday comfort.</p>
+                                <div class="flex w-[70%] justify-between mb-[25px] max-md:flex-wrap max-sm:w-[100%]">
+                                    <div tabindex="-1"
+                                        class="max-md:mb-[15px] max-sm:w-[100%] max-sm:mb-[40px] px-[30px] py-[15px] text-2xl font-bold rounded-full bg-[#F76F15] text-white cursor-pointer duration-[.4s] hover:bg-[#FF822F] hover:shadow-xl/50 hover:shadow-orange-500 focus:shadow-orange-500 focus:bg-[#FF822F] focus:shadow-xl/50 text-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+                                        Shop Now &#8594;</div>
+                                    <div tabindex="-1"
+                                        class=" max-sm:w-[100%] border border-[#99A1AF] border-[3px] text-[#99A1AF] px-[20px] py-[15px] text-2xl font-bold rounded-full cursor-pointer duration-[.4s] hover:bg-[#99a1af3d] focus:bg-[#99a1af3d]">
+                                        Browse Categories</div>
+                                </div>
+                            </div>
+                            <!-- ինֆորմացիայի բաժին -->
+                            <hr class="w-[100%] mt-[80px] mb-[50px] bg-[#99A1AF] h-[4px]">
+                            <div class="flex w-[80%] justify-between text-[#fff] mb-[30px] max-sm:w-[100%]">
+                                <div class="w-[33%] border-r-[3px] border-[#99A1AF]">
+                                    <p class="text-5xl font-bold max-sm:text-4xl">50K+</p>
+                                    <p class="text-[#99A1AF] text-xl max-sm:text-base">Happy Customers</p>
+                                </div>
+                                <div class="w-[33%] border-r-[3px] border-[#99A1AF] px-[20px]">
+                                    <p class="text-5xl font-bold flex items-center max-sm:text-4xl">4.9
+                                        <svg width="20" height="20" fill="none" class="ml-[10px] ">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                                fill="yellow">
+                                        </svg>
+                                    </p>
+                                    <p class="text-[#99A1AF] text-xl max-sm:text-base">Average Rating</p>
+                                </div>
+                                <div class="w-[33%] pl-[20px]">
+                                    <p class="text-5xl font-bold max-sm:text-4xl">300+</p>
+                                    <p class="text-[#99A1AF] text-xl max-sm:text-base">Styles Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Անիմացիոն նկար -->
+                    <div class="w-[40%] max-xl:w-[60%] max-lg:w-[80%] max-md:w-[90%] max-sm:mx-auto">
+                        <div class="relative">
+                            <img src="photos/1.jpg" alt=""
+                                class="w-[100%] rotate-[-7deg] mt-[50px] animate-[sharjum_2s_alternate_infinite]">
+                            <div
+                                class="absolute w-[90px] h-[90px] rounded-full bg-[#F76F15] top-[7px] right-[40px] text-center text-white px-[10px] py-[8px] animate-[tartel_1s_alternate_infinite]">
+                                UP <span class="font-bold text-lg">TO40%</span> OFF</div>
+                            <div
+                                class="absolute flex top-[50px] left-[-30px] max-sm:top-[-70px] max-sm:right-[0] p-[20px] bg-[#ffffff40] rounded-[10px] items-center">
+                                <div
+                                    class="w-[50px] h-[50px] bg-[#00800026] rounded-full mr-[10px] flex justify-center items-center">
+                                    <svg class="w-6 h-7 text-green-500" fill="transparent" stroke="currentColor">
+                                        <path d="M5 12.5L10.5 19L20 9.5" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="">
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Free Shipping</p>
+                                    <p class="text-[#99A1AF]">Orders over $75</p>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex bottom-[50px] right-[-30px] max-sm:bottom-[-25px] max-sm:left-[0] p-[20px] bg-[#ffffff40] rounded-[10px] items-center">
+                                <div
+                                    class="w-[50px] h-[50px] bg-[#ff000033] rounded-full mr-[10px] flex justify-center items-center">
+                                    <svg width="25" height="25" fill="none">
+                                        <path
+                                            d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+                                            fill="#FFA500">
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Easy Returns</p>
+                                    <p class="text-[#99A1AF]">60-day guarantee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Անիմացիոն սլաք -->
+                <div class="w-max mx-auto flex flex-col items-center">
+                    <p class="text-[#99A1AF]">EXPLORE</p>
+                    <div>
+                        <svg width="24" height="24" fill="none" class="mt-[10px] animate-[slaq_.7s_alternate_infinite]">
+                            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#99A1AF" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Կատեգորիաները -->
+            <div class="w-[90%] mx-auto my-[40px]">
+                <div class="flex justify-between items-center mb-[40px]">
+                    <div>
+                        <h2 class="text-4xl font-bold leading-[55px] max-sm:text-3xl">Shop by Category</h2>
+                        <p>Find the perfect pair for every occasion</p>
+                    </div>
+                    <div>
+                        <p class="cursor-pointer text-[#A04508] hover:text-[#da6213]">View All <span
+                                class="ml-[10px]">&gt;</span></p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-between gap-[25px] max-sm:justify-center">
+                    <div tabindex="-1"
+                        class="foc cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/1.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">48 products
+                        </div>
+                        <p class="text-xl font-bold">Running</p>
+                        <p>Performance shoes built for speed and endurance</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                    <div tabindex="-1"
+                        class="cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/2.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">86 products
+                        </div>
+                        <p class="text-xl font-bold">Sneakers</p>
+                        <p>Classic and contemporary streetwear styles</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                    <div tabindex="-1"
+                        class="cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/3.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">32 products
+                        </div>
+                        <p class="text-xl font-bold">Basketball</p>
+                        <p>Court-ready shoes with superior ankle support</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                    <div tabindex="-1"
+                        class="cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/4.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">64 products
+                        </div>
+                        <p class="text-xl font-bold">Casual</p>
+                        <p>Everyday comfort meets effortless style</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                    <div tabindex="-1"
+                        class="cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/5.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">28 products
+                        </div>
+                        <p class="text-xl font-bold">Boots</p>
+                        <p>Rugged style for any terrain</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                    <div tabindex="-1"
+                        class="cursor-pointer w-[31%] aspect-[1/0.75] bg-[url(photos/kategorianer/6.jpg)] bg-size-[120%] flex flex-col justify-around pt-[10%] pl-[15px] text-[#fff] rounded-[25px] duration-[.6s] group hover:bg-size-[125%] focus:bg-size-[125%] max-lg:w-[45%] max-sm:w-[90%]">
+                        <div class="w-max text-sm font-bold py-[5px] px-[10px] bg-[#ffffff6e] rounded-full">24 products
+                        </div>
+                        <p class="text-xl font-bold">Sandals</p>
+                        <p>Breathable comfort for warmer days</p>
+                        <p>Shop Now <span class="duration-[.6s] group-hover:ml-[15px] group-focus:ml-[15px]">&#8594;</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Կալեկցիաներ -->
+            <div class="w-[90%] mx-auto">
+                <div class="flex justify-between items-center my-[100px]">
+                    <div>
+                        <h2 class="text-4xl font-bold leading-[50px] max-sm:text-2xl">Featured Collection</h2>
+                        <p>Our most popular styles handpicked for you</p>
+                    </div>
+                    <div class="cursor-pointer text-[#A04508] hover:text-[#da6213]">View All Featured <span
+                            class=" ml-[10px]">&gt;</span></div>
+                </div>
+                <div class="flex flex-wrap justify-between gap-[15px]">
+                    <!-- Կալեկցիա 1 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/5.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Running</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Velocity Runner Pro</p>
+                            <p class="font-bold">$179 <span class="font-thin line-through ml-[10px]">$219</span></p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF4136]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#0074D9]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 2 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/1.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Sneakers</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Streetwise Classic</p>
+                            <p class="font-bold">$129</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#1E3A5F]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#8B4513]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 3 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/2.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Basketball</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.7
+                                </div>
+                            </div>
+                            <p class="font-bold">Court Dominator X</p>
+                            <p class="font-bold">$199</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#4169E1]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#0074D9]"></div>
+                            </div>
+                            <p>11 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 4 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/3.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Boots</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.8
+                                </div>
+                            </div>
+                            <p class="font-bold">Trail Blazer GTX</p>
+                            <p class="font-bold">$189 <span class="font-thin line-through ml-[10px]">$229</span></p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#8B4513]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#36454F]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#D2B48C]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 5 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/4.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Running</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Marathon Elite</p>
+                            <p class="font-bold">$249</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#CCFF00]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF6B6B]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 6 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/5.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Sandals</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.8
+                                </div>
+                            </div>
+                            <p class="font-bold">Cloud 9 Recovery</p>
+                            <p class="font-bold">$59</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF4136]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#fff] border"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#0074D9]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 7 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/6.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Sneakers</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="font-bold">Court Legacy Low</p>
+                            <p class="font-bold">$99</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#fff] border"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#0074D9]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Կալեկցիա 8 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Կալեկցիայի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/7.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կալեկցիայի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Running</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Velocity Runner Pro</p>
+                            <p class="font-bold">$179 <span class="font-thin line-through ml-[10px]">$219</span></p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF4136]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#0074D9]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ինֆորմացիա առաքման, հետ վերադարձի, գառանտիաի և անվտանգության մասին -->
+            <div
+                class="flex flex-wrap w-[100%] justify-center gap-[25px] text-sm border-t-[2px] border-b-[2px] border-[#99A1AF] my-[80px]">
+                <div class="w-[18%] py-[60px] flex gap-[15px] max-lg:w-[40%] max-sm:w-[80%]">
+                    <div class="bg-[#f76f154f] h-max p-[7px] rounded-[8px]">
+                        <svg fill="#F76F15" version="1.1" id="Layer_1" class="w-[25px]" viewBox="0 0 511.998 511.998"
+                            xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M502.985,314.681v-61.857c0-2.867-0.754-5.683-2.186-8.167l-44.834-77.733c-2.919-5.061-8.317-8.178-14.16-8.178h-69.402
+			v-21.772c0-9.027-7.319-16.346-16.346-16.346H28.773c-9.027,0-16.346,7.318-16.346,16.346v176.45
+			C5.296,315.181,0,321.601,0,329.275c0,9.027,7.319,16.346,16.346,16.346h47.047c4.337,25.924,26.919,45.75,54.056,45.75
+			s49.719-19.825,54.056-45.75h194.863c4.337,25.924,26.919,45.75,54.056,45.75c27.137,0,49.719-19.825,54.056-45.75h21.171
+			c9.027,0,16.346-7.318,16.346-16.346C512,322.887,508.327,317.37,502.985,314.681z M117.451,358.679
+			c-12.203,0-22.13-9.927-22.13-22.13c0-12.203,9.927-22.13,22.13-22.13c12.203,0,22.13,9.927,22.13,22.13
+			C139.58,348.752,129.653,358.679,117.451,358.679z M339.713,312.929H166.914c-8.84-18.437-27.689-31.201-49.464-31.201
+			s-40.625,12.764-49.464,31.201H45.119v-159.61h294.594V312.929z M372.404,191.437h59.959l22.443,38.91h-82.402V191.437z
+			 M420.426,358.679c-12.203,0-22.13-9.927-22.13-22.13c0-12.203,9.927-22.13,22.13-22.13c12.203,0,22.13,9.927,22.13,22.13
+			C442.556,348.752,432.628,358.679,420.426,358.679z M470.293,312.929h-0.403c-8.84-18.437-27.689-31.201-49.464-31.201
+			c-20.659,0-38.679,11.49-48.023,28.412v-47.103h97.89V312.929z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold leading-[30px]">Free Shipping</p>
+                        <p>Free standard shipping on all orders over $75. Express options available.</p>
+                    </div>
+                </div>
+                <div class="w-[18%] py-[60px] flex gap-[15px] max-lg:w-[40%] max-sm:w-[80%]">
+                    <div class="bg-[#f76f154f] h-max p-[7px] rounded-[8px]">
+                        <svg class="w-[25px]" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 12C21 16.9706 16.9706 21 12 21C9.69494 21 7.59227 20.1334 6 18.7083L6 21M3 12C3 7.02944 7.02944 3 12 3C14.3051 3 16.4077 3.86656 18 5.29168L18 3"
+                                stroke="#F76F15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L3 18" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 6L21 6" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold leading-[30px]">60-Day Returns</p>
+                        <p>Changed your mind? Return unworn items within 60 days, no questions asked.</p>
+                    </div>
+                </div>
+                <div class="w-[18%] py-[60px] flex gap-[15px] max-lg:w-[40%] max-sm:w-[80%]">
+                    <div class="bg-[#f76f154f] h-max p-[7px] rounded-[8px]">
+                        <svg fill="#F76F15" viewBox="0 0 224.726 224.726" xml:space="preserve" class="w-[25px]">
+                            <path d="M223.612,109.586L190.5,35.752c-0.001-0.002-0.002-0.004-0.003-0.006l-0.043-0.096c-0.111-0.247-0.243-0.479-0.389-0.7
+	c-0.039-0.06-0.086-0.114-0.127-0.171c-0.131-0.182-0.272-0.353-0.424-0.514c-0.06-0.063-0.121-0.125-0.184-0.185
+	c-0.168-0.159-0.345-0.306-0.533-0.44c-0.049-0.036-0.094-0.076-0.145-0.11c-0.236-0.156-0.486-0.29-0.746-0.405
+	c-0.074-0.033-0.151-0.057-0.227-0.086c-0.204-0.078-0.411-0.143-0.625-0.194c-0.088-0.021-0.175-0.042-0.264-0.058
+	c-0.293-0.054-0.591-0.09-0.896-0.09h-58.428c-1-3.111-2.943-5.794-5.485-7.737v-7.262c0-2.761-2.239-5-5-5h-9.334
+	c-2.761,0-5,2.239-5,5v7.381c-2.465,1.933-4.347,4.572-5.326,7.619H38.734c-0.305,0-0.602,0.037-0.896,0.09
+	c-0.09,0.016-0.176,0.037-0.264,0.058c-0.214,0.051-0.422,0.116-0.625,0.194c-0.076,0.029-0.153,0.053-0.227,0.086
+	c-0.26,0.115-0.51,0.248-0.746,0.405c-0.051,0.034-0.096,0.074-0.145,0.11c-0.188,0.134-0.365,0.28-0.533,0.44
+	c-0.064,0.06-0.124,0.122-0.185,0.185c-0.153,0.161-0.293,0.333-0.424,0.514c-0.042,0.058-0.088,0.112-0.127,0.171
+	c-0.146,0.221-0.278,0.453-0.389,0.7l-0.043,0.096c-0.001,0.002-0.002,0.004-0.003,0.006L0.897,109.848
+	C0.335,110.657,0,111.636,0,112.696c0,21.358,17.376,38.734,38.734,38.734c21.358,0,38.734-17.376,38.734-38.734
+	c0-1.06-0.334-2.038-0.897-2.847L46.456,42.696h50.986c1.007,2.905,2.831,5.424,5.204,7.286v125.381H58.308
+	c-1.871,0-3.586,1.045-4.444,2.708L40.11,204.738c-0.799,1.55-0.733,3.405,0.174,4.894c0.908,1.489,2.525,2.398,4.27,2.398h135.519
+	c0.006-0.001,0.012,0,0.02,0c2.761,0,5-2.239,5-5c0-0.98-0.282-1.894-0.769-2.665l-13.563-26.294
+	c-0.858-1.663-2.573-2.708-4.444-2.708H121.98V50.101c2.449-1.873,4.334-4.436,5.363-7.405h50.828l-30.475,67.954
+	c-0.008,0.018-0.012,0.036-0.02,0.054c-0.023,0.054-0.04,0.11-0.062,0.165c-0.09,0.229-0.162,0.463-0.217,0.699
+	c-0.014,0.062-0.032,0.122-0.044,0.184c-0.055,0.287-0.083,0.576-0.087,0.866c0,0.027-0.008,0.051-0.008,0.078
+	c0,21.358,17.376,38.734,38.734,38.734s38.734-17.376,38.734-38.734C224.726,111.514,224.298,110.442,223.612,109.586z
+	 M64.646,107.696H12.822l25.912-57.781L64.646,107.696z M118.226,37.53c0,3.217-2.617,5.833-5.833,5.833
+	c-3.217,0-5.834-2.617-5.834-5.833c0-3.217,2.617-5.833,5.834-5.833C115.609,31.696,118.226,34.313,118.226,37.53z M159.98,107.696
+	l25.913-57.781l25.912,57.781H159.98z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold leading-[30px]">Size Guarantee</p>
+                        <p>Not the right fit? Exchange for a different size at no extra cost.</p>
+                    </div>
+                </div>
+                <div class="w-[18%] py-[60px] flex gap-[15px] max-lg:w-[40%] max-sm:w-[80%]">
+                    <div class="bg-[#f76f154f] h-max p-[7px] rounded-[8px]">
+                        <svg viewBox="0 0 111.811 122.88" class="w-[25px]" xml:space="preserve" fill="#F76F15">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M55.713,0c20.848,13.215,39.682,19.467,55.846,17.989 c2.823,57.098-18.263,90.818-55.63,104.891C19.844,109.708-1.5,77.439,0.083,17.123C19.058,18.116,37.674,14.014,55.713,0L55.713,0 z M33.784,66.775c-1.18-1.01-1.318-2.786-0.309-3.967c1.011-1.181,2.787-1.318,3.967-0.309l11.494,9.875l25.18-27.684 c1.047-1.15,2.828-1.234,3.979-0.188c1.149,1.046,1.233,2.827,0.187,3.978L51.262,78.188l-0.002-0.002 c-1.02,1.121-2.751,1.236-3.91,0.244L33.784,66.775L33.784,66.775z M55.735,7.055c18.454,11.697,35.126,17.232,49.434,15.923 c2.498,50.541-16.166,80.39-49.241,92.846C23.986,104.165,5.091,75.603,6.493,22.211C23.29,23.091,39.768,19.46,55.735,7.055 L55.735,7.055z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold leading-[30px]">Secure Checkout</p>
+                        <p>Your payment information is encrypted and secure. Shop with confidence.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Նոր տեսականի -->
+            <div class="w-[90%] mx-auto">
+                <div class="flex justify-between items-center my-[100px]">
+                    <div>
+                        <h2 class="text-4xl font-bold leading-[50px] max-sm:text-2xl">New Arrivals</h2>
+                        <p>Fresh styles just landed — be the first to rock them</p>
+                    </div>
+                    <div class="cursor-pointer text-[#A04508] hover:text-[#da6213]">Shop New Arrivals <span
+                            class=" ml-[10px]">&gt;</span></div>
+                </div>
+                <div class="flex flex-wrap justify-between gap-[15px]">
+                    <!-- Նոր տեսականի 1 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Նոր տեսականի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/3.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Նոր տեսականի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Basketball</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.7
+                                </div>
+                            </div>
+                            <p class="font-bold">Court Dominator X</p>
+                            <p class="font-bold">$179</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#fff] border"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#4169E1]"></div>
+                            </div>
+                            <p>11 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Նոր տեսականի 2 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Նոր տեսականի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/2.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Նոր տեսականի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Sandals</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="font-bold">Summer Slide Sport</p>
+                            <p class="font-bold">$49</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF4136]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#fff] border"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Նոր տեսականի 3 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Նոր տեսականի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/5.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Նոր տեսականի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Running</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Marathon Elite</p>
+                            <p class="font-bold">$249</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#CCFF00]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF6B6B]"></div>
+                            </div>
+                            <p>8 sizes available</p>
+                        </div>
+                    </div>
+                    <!-- Նոր տեսականի 4 -->
+                    <div class="w-[24%] max-lg:w-[40%] max-sm:w-[100%]">
+                        <!-- Նոր տեսականի նկարի հատված -->
+                        <div tabindex="-1"
+                            class="cursor-pointer group w-[100%] aspect-[1/1.1] bg-[url(photos/kalekcia/6.jpg)] bg-size-[100%] rounded-[15px] duration-[.6s] flex flex-col justify-between hover:bg-size-[110%] focus:bg-size-[110%]">
+                            <div
+                                class="w-max mt-[20px] ml-[10px] py-[5px] px-[10px] bg-[#008535] rounded-full text-xs text-[#fff] font-bold">
+                                NEW</div>
+                            <div class="flex justify-around mb-[20px] opacity-0 duration-[.6s] group-hover:opacity-[1] group-focus:opacity-[1]">
+                                <div
+                                    class="flex justify-center items-center bg-[#fff] w-[70%] rounded-[5px] gap-[10px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Add to Cart
+                                </div>
+                                <div class="bg-[#fff] flex justify-center items-center p-[13px] rounded-[5px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4b5563"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Նոր տեսականի ինֆորմացիայի հատված -->
+                        <div class="my-[20px] flex flex-col h-[190px] justify-between">
+                            <div class="flex justify-between">
+                                <div>Sandals</div>
+                                <div class="flex">
+                                    <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                            fill="yellow">
+                                    </svg>
+                                    4.9
+                                </div>
+                            </div>
+                            <p class="font-bold">Cloud 9 Recovery</p>
+                            <p class="font-bold">$59</p>
+                            <div class="flex gap-[10px]">
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#000]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#6B7280]"></div>
+                                <div class="w-[20px] h-[20px] rounded-full bg-[#FF6B6B]"></div>
+                            </div>
+                            <p>12 sizes available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Կոմենտարիաների հատված -->
+            <div class="bg-[#030712] border-t-[1px] my-[50px]">
+                <div class="w-[90%] mx-auto">
+                    <div class="text-center mt-[100px] mb-[70px]">
+                        <div class="text-[#F76F15] w-max mx-auto bg-[#f76f1533] py-[4px] px-[13px] rounded-full">
+                            Customer Love</div>
+                        <p class="text-[#fff] text-4xl font-bold leading-[80px]">What Our Customers Say</p>
+                        <p class="text-[#99A1AF]">Join thousands of happy customers who have made Stride their go-to
+                            footwear brand</p>
+                    </div>
+                    <!-- Կոմենտարիաի box -->
+                    <div class="flex justify-between flex-wrap max-sm:flex-col max-sm:items-center">
+                        <!-- Կոմենտարիաի box 1 -->
+                        <div
+                            class="w-[30%] bg-[#101828] text-[#fff] rounded-[15px] max-lg:w-[45%] max-lg:mt-[15px] max-md:w-[80%] max-sm:w-[90%]">
+                            <div class="flex gap-[6px] m-[30px]">
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                            </div>
+                            <p class="m-[30px] text-lg">"Stride has completely transformed my running experience. The
+                                Velocity Runner Pro helped
+                                me
+                                PR at my last marathon by 8 minutes."</p>
+                            <div class="m-[30px] flex gap-[15px]">
+                                <div class=" w-[50px] bg-[url(photos/3.jpg)] bg-size-[100%] rounded-full"></div>
+                                <div>
+                                    <p>Marcus Chen</p>
+                                    <p class="text-[#99A1AF]">Marathon Runner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կոմենտարիաի box 2 -->
+                        <div
+                            class="w-[30%] bg-[#101828] text-[#fff] rounded-[15px] max-lg:w-[45%] max-lg:mt-[15px] max-md:w-[80%] max-sm:w-[90%]">
+                            <div class="flex gap-[6px] m-[30px]">
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                            </div>
+                            <p class="m-[30px] text-lg">"I wear Stride shoes for all my classes. They are versatile,
+                                stylish, and most importantly, my feet never hurt after a long day of training."</p>
+                            <div class="m-[30px] flex gap-[15px]">
+                                <div class=" w-[50px] bg-[url(photos/3.jpg)] bg-size-[100%] rounded-full"></div>
+                                <div>
+                                    <p>Emily Rodriguez</p>
+                                    <p class="text-[#99A1AF]">Fitness Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Կոմենտարիաի box 3 -->
+                        <div
+                            class="w-[30%] bg-[#101828] text-[#fff] rounded-[15px] max-lg:w-[45%] max-lg:mt-[15px] max-md:w-[80%] max-sm:w-[90%]">
+                            <div class="flex gap-[6px] m-[30px]">
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                                <svg width="20" height="20" fill="none" class="mr-[10px]">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+                                        fill="yellow">
+                                </svg>
+                            </div>
+                            <p class="m-[30px] text-lg">"The quality and attention to detail is unmatched. I have been
+                                collecting sneakers for 15 years and Stride has become my go-to brand."</p>
+                            <div class="m-[30px] flex gap-[15px]">
+                                <div class=" w-[50px] bg-[url(photos/3.jpg)] bg-size-[100%] rounded-full"></div>
+                                <div>
+                                    <p>David Kim</p>
+                                    <p class="text-[#99A1AF]">Sneaker Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Կոմենտարիների հատվածի վարկանիշի մաս -->
+                    <div
+                        class="flex justify-center gap-[35px] text-center pt-[70px] pb-[100px] mt-[70px] border-t-[2px] border-[#99A1AF] max-sm:gap-[15px]">
+                        <div class="border-r-[1px] border-[#99A1AF] pr-[30px] max-sm:pr-[15px]">
+                            <p class="text-[#fff] text-4xl font-bold max-sm:text-2xl">50K+</p>
+                            <p class="text-[#99A1AF]">Happy Customers</p>
+                        </div>
+                        <div class="border-r-[1px] border-[#99A1AF] pr-[30px] max-sm:pr-[15px]">
+                            <p class="text-[#fff] text-4xl font-bold max-sm:text-2xl">4.9/5</p>
+                            <p class="text-[#99A1AF]">Average Rating</p>
+                        </div>
+                        <div class="border-r-[1px] border-[#99A1AF] pr-[30px] max-sm:pr-[15px]">
+                            <p class="text-[#fff] text-4xl font-bold max-sm:text-2xl">15K+</p>
+                            <p class="text-[#99A1AF]">5-Star Reviews</p>
+                        </div>
+                        <div>
+                            <p class="text-[#fff] text-4xl font-bold max-sm:text-2xl">98%</p>
+                            <p class="text-[#99A1AF]">Would Recommend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Խաղարկության բաժին -->
+            <div
+                class="bg-[#F76F15] py-[120px] flex flex-col items-center text-[#fff] bg-[url(photos/fon.png)] bg-size-[30px]">
+                <p class="text-4xl font-bold leading-[50px] max-sm:text-2xl max-sm:text-center">Ready to Step Up Your
+                    Game?</p>
+                <p class="w-[40%] text-center mb-[50px]">Join the Stride community and get 15% off your first order.
+                    Plus, early access to new releases and
+                    exclusive member-only deals.</p>
+                <form action="index.html" method="get">
+                    <div class="flex gap-[15px] mb-[15px] flex-wrap">
+                        <input tabindex="0"
+                            class="outline-none focus:outline-white focus:outline-[3px] focus:outline-solid w-[300px] p-[18px] rounded-full text-[18px] bg-[#ffffff21] max-sm:w-[90%] max-sm:mx-auto"
+                            type="text" name="el_hasce" placeholder="Enter your email">
+                        <input tabindex="0"
+                            class="outline-none hover:shadow-[0px_5px_10px_#fff] focus:shadow-[0px_5px_10px_#fff] p-[20px] bg-[#fff] text-[#A04508] font-bold text-[18px] rounded-full max-sm:w-[90%] max-sm:mx-auto cursor-pointer"
+                            type="submit" name="uxarkel" value="Get 15% Off">
+                    </div>
+                </form>
+                <p class="text-[#FCC099] mb-[80px]">No spam, ever. Unsubscribe anytime.</p>
+                <p>Download Our App</p>
+                <!-- Play Markets -->
+                <div class="flex gap-[20px] mt-[15px] flex-wrap">
+                    <div
+                        class="flex items-center p-[15px] bg-[#00000024] rounded-[12px] gap-[25px] max-sm:w-[90%] max-sm:mx-auto max-sm:justify-center">
+                        <div>
+                            <svg class="w-[30px]" shape-rendering="geometricPrecision" fill="#fff"
+                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640">
+                                <path
+                                    d="M494.782 340.02c-.803-81.025 66.084-119.907 69.072-121.832-37.595-54.993-96.167-62.552-117.037-63.402-49.843-5.032-97.242 29.362-122.565 29.362-25.253 0-64.277-28.607-105.604-27.85-54.32.803-104.4 31.594-132.403 80.245C29.81 334.457 71.81 479.58 126.816 558.976c26.87 38.882 58.914 82.56 100.997 81 40.512-1.594 55.843-26.244 104.848-26.244 48.993 0 62.753 26.245 105.64 25.406 43.606-.803 71.232-39.638 97.925-78.65 30.887-45.12 43.548-88.75 44.316-90.994-.969-.437-85.029-32.634-85.879-129.439l.118-.035zM414.23 102.178C436.553 75.095 451.636 37.5 447.514-.024c-32.162 1.311-71.163 21.437-94.253 48.485-20.729 24.012-38.836 62.28-33.993 99.036 35.918 2.8 72.591-18.248 94.926-45.272l.036-.047z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[12px]">Download on the</p>
+                            <p>App Store</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center p-[15px] bg-[#00000024] rounded-[12px] gap-[25px] max-sm:w-[90%] max-sm:mx-auto max-sm:justify-center">
+                        <div>
+                            <svg class="w-[30px]" fill="#fff" viewBox="-1 0 24 24">
+                                <path
+                                    d="m3.751.61 13.124 7.546-2.813 2.813zm-2.719-.61 12.047 12-12.046 12c-.613-.271-1.033-.874-1.033-1.575 0-.023 0-.046.001-.068v.003-20.719c-.001-.019-.001-.042-.001-.065 0-.701.42-1.304 1.022-1.571l.011-.004zm19.922 10.594c.414.307.679.795.679 1.344 0 .022 0 .043-.001.065v-.003c.004.043.007.094.007.145 0 .516-.25.974-.636 1.258l-.004.003-2.813 1.593-3.046-2.999 3.047-3.047zm-17.203 12.796 10.312-10.359 2.813 2.813z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[12px]">Get it on</p>
+                            <p>Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ակումբին գրանցվելու հատված -->
+            <div class="w-[90%] mx-auto flex justify-between items-center py-[50px] leading-[45px] mb-[40px] flex-wrap">
+                <div>
+                    <p class="text-2xl font-bold">Join the Stride Club</p>
+                    <p>Get 15% off your first order, plus early access to new drops.</p>
+                </div>
+                <form action="index.html" method="get">
+                    <div class="flex gap-[20px] flex-wrap">
+                        <input tabindex="0"
+                            class="outline-none focus:outline-solid focus:outline-[#F76F15] focus:outline-[3px] p-[6px] border border-[#99A1AF]  w-[300px] rounded-[10px] outline-[#F76F15] max-sm:w-[100%]"
+                            type="text" name="el_hasce" placeholder="Enter your email">
+                        <input tabindex="0"
+                            class="outline-none focus:shadow-[0px_5px_10px_#F76F15] bg-[#F76F15] py-[6px] px-[35px] rounded-[10px] text-[#fff] font-bold max-sm:w-[100%] text-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]"
+                            type="submit" name="grancvel" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="">
+            <!-- footer-ի մենյուի հատված-->
+            <div class="flex w-[90%] mx-auto justify-between flex-wrap">
+                <div class="w-[270px] max-md:w-[50%] max-sm:w-[90%]">
+                    <!-- Էմբլեմա -->
+                    <div class="flex py-[25px] items-center">
+                        <div class="w-[45px] h-[45px] flex justify-center items-center bg-[#F76F15] rounded-[10px]">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                                <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+                            </svg>
+                        </div>
+                        <span class="ml-[15px] text-[20px] font-bold">Stride</span>
+                    </div>
+                    <p>Premium footwear for every step of your journey. From athletic performance to everyday comfort.
+                    </p>
+                    <!-- Մեդիա իկոնկաներ -->
+                    <div>
+                        <div class="flex gap-[20px] mt-[15px]">
+                            <svg class="w-[25px]" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid">
+                                <g>
+                                    <path tabindex="-1" class="outline-none duration-[.4s] hover:fill-[#F76F15] focus:fill-[#F76F15]"
+                                        d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z"
+                                        fill="#99A1AF">
+                                    </path>
+                                </g>
+                            </svg>
+                            <svg tabindex="-1" class="outline-none w-[25px] duration-[.4s] hover:fill-[#F76F15] focus:fill-[#F76F15]" fill="#99A1AF" version="1.1"
+                                viewBox="0 0 97.75 97.75" xml:space="preserve">
+                                <g>
+                                    <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
+		 M67.521,24.89l-6.76,0.003c-5.301,0-6.326,2.519-6.326,6.215v8.15h12.641L67.07,52.023H54.436v32.758H41.251V52.023H30.229V39.258
+		h11.022v-9.414c0-10.925,6.675-16.875,16.42-16.875l9.851,0.015V24.89L67.521,24.89z" />
+                                </g>
+                            </svg>
+                            <svg tabindex="-1" class="outline-none w-[25px] group" viewBox="0 0 48 48" fill-rule="evenodd" clip-rule="evenodd"
+                                baseProfile="basic">
+                                <polygon class="duration-[.4s] group-hover:fill-[#F76F15] group-focus:fill-[#F76F15]" fill="#99A1AF"
+                                    points="41,6 9.929,42 6.215,42 37.287,6" />
+                                <polygon fill="#fff" fill-rule="evenodd" points="31.143,41 7.82,7 16.777,7 40.1,41"
+                                    clip-rule="evenodd" />
+                                <path class="duration-[.4s] group-hover:fill-[#F76F15] group-focus:fill-[#F76F15]" fill="#99A1AF"
+                                    d="M15.724,9l20.578,30h-4.106L11.618,9H15.724 M17.304,6H5.922l24.694,36h11.382L17.304,6L17.304,6z" />
+                            </svg>
+                            <svg tabindex="-1" class="outline-none w-[25px] duration-[.4s] hover:fill-[#F76F15] focus:fill-[#F76F15]" fill="#99A1AF" version="1.1"
+                                id="Layer_1" viewBox="0 0 260 180" enable-background="new 0 0 260 180"
+                                xml:space="preserve">
+                                <path d="M220,2H40C19.01,2,2,19.01,2,40v100c0,20.99,17.01,38,38,38h180c20.99,0,38-17.01,38-38V40C258,19.01,240.99,2,220,2z
+	 M102,130V50l68,40L102,130z" />
+                            </svg>
+                            <svg tabindex="-1" class="outline-none w-[25px] duration-[.4s] hover:fill-[#F76F15] focus:fill-[#F76F15]" fill="#99A1AF"
+                                viewBox="0 0 512 512" id="icons">
+                                <path
+                                    d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold leading-[45px]">Shop</p>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Running</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Sneakers</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Basketball</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Casual</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Boots</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Sandals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold leading-[45px]">Help</p>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">FAQ</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Shipping & Returns</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Size Guide</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Contact Us</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="mr-[70px]">
+                    <p class="font-bold leading-[45px]">About</p>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Our Story</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Sustainability</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Athletes</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Careers</a></li>
+                        <li><a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#F76F15] focus:text-[#F76F15]">Store Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-[#99A1AF] mt-[25px]">
+            <!-- Քարտերի իկոնկաների հատված -->
+            <div class="flex w-[90%] mx-auto justify-between items-center py-[30px] flex-wrap max-sm:gap-[15px]">
+                <p>© 2026 Stride. All rights reserved.</p>
+                <div class="flex gap-[15px] items-center">
+                    <a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#000] focus:text-[#000]">Privacy</a>
+                    <a tabindex="0" href="#" class="outline-none text-[#A04508] hover:text-[#000] focus:text-[#000]">Terms</a>
+                    <img src="photos/pay_cards/2.png" alt="" class="w-[100%] aspect-[1/0.62]">
+                    <img src="photos/pay_cards/3.png" alt="" class="w-[100%] aspect-[1/0.62]">
+                    <img src="photos/pay_cards/4.png" alt="" class="w-[100%] aspect-[1/0.62]">
+                    <img src="photos/pay_cards/2.png" alt="" class="w-[100%] aspect-[1/0.62]">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
